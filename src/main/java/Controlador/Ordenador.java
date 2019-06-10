@@ -2,10 +2,10 @@ package Controlador;
 
 import java.io.IOException;
 
-public class Ordenador {
+public final class Ordenador {
 
     private String[] marcas_iniciales;
-    private double[] tamanosPantallas_iniciales;
+    private double[] tamaniosPantallas_iniciales;
 
     public Ordenador() throws IOException {
         AdministradorCelulares adm = new AdministradorCelulares();
@@ -31,9 +31,9 @@ public class Ordenador {
     @return void.
      */
     public void asignarTamPant_iniciales(AdministradorCelulares adm) {
-        tamanosPantallas_iniciales = new double[adm.getCelulares().size()];
+        tamaniosPantallas_iniciales = new double[adm.getCelulares().size()];
         for (int i = 0; i < adm.getCelulares().size(); i++) {
-            tamanosPantallas_iniciales[i] = adm.getCelulares().get(i).getTamanoPantalla();
+            tamaniosPantallas_iniciales[i] = adm.getCelulares().get(i).getTamanioPantalla();
         }
     }
 
@@ -94,7 +94,7 @@ public class Ordenador {
             return letras;
         } catch (NullPointerException e) {
             System.out.println(e);
-            System.out.println("Introduzco un grupo de cadenas existentes por favor");
+            System.out.println("Introduzca un grupo de cadenas existentes por favor");
             char[] arregloMalo = new char[]{'n'};
             return arregloMalo;
         }
@@ -109,11 +109,11 @@ public class Ordenador {
     }
 
     public double[] getTamanosPantallas_iniciales() {
-        return this.tamanosPantallas_iniciales;
+        return this.tamaniosPantallas_iniciales;
     }
 
     public void setTamanosPantallas_iniciales(double[] tamanosPantallas_iniciales) {
-        this.tamanosPantallas_iniciales = tamanosPantallas_iniciales;
+        this.tamaniosPantallas_iniciales = tamanosPantallas_iniciales;
     }
 
     /*
@@ -158,7 +158,7 @@ public class Ordenador {
             return letras;
         } catch (NullPointerException e) {
             System.out.println(e);
-            System.out.println("Introduzco un grupo de cadenas existentes por favor");
+            System.out.println("Introduzca un grupo de cadenas existentes por favor");
             char[] arregloMalo = new char[]{'n'};
             return arregloMalo;
         }

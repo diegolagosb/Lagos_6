@@ -3,7 +3,7 @@ package Controlador;
 public class Celular {
 
     private String modelo;
-    private double tamanoPantalla;
+    private double tamanioPantalla;
 
     public String getModelo() {
         return this.modelo;
@@ -13,16 +13,16 @@ public class Celular {
         this.modelo = modelo;
     }
 
-    public double getTamanoPantalla() {
-        return this.tamanoPantalla;
+    public double getTamanioPantalla() {
+        return this.tamanioPantalla;
     }
 
-    public void setTamanoPantalla(double tamanoPantalla) {
-        this.tamanoPantalla = tamanoPantalla;
+    public void setTamanioPantalla(double tamanioPantalla) {
+        this.tamanioPantalla = tamanioPantalla;
     }
 
-    public Celular(String modelo, double tamanoPantalla) {
+    public Celular(String modelo, double tamanioPantalla) {
         this.modelo = modelo;
-        this.tamanoPantalla = tamanoPantalla;
+        this.tamanioPantalla = tamanioPantalla;
     }
 }

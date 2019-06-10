@@ -1,13 +1,12 @@
 package Controlador;
 
 import java.util.ArrayList;
-import Controlador.Celular;
 import GestorArchivos.GestorCelulares;
 import java.io.IOException;
 
-public class AdministradorCelulares {
+public final class AdministradorCelulares {
 
-    private ArrayList<Celular> celulares = new ArrayList<Celular>();
+    private ArrayList<Celular> celulares = new ArrayList<>();
 
     /*
     Crear una cantidad de celulares según los datos obtenidos de un archivo por otra clase.

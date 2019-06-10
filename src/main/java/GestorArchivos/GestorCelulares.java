@@ -10,7 +10,7 @@ import java.util.ArrayList;
 public class GestorCelulares {
 
     /*
-    Se encarga de leer un archivo excell y retornar sus datos.
+    Se encarga de leer un archivo excel(csv) y retornar sus datos.
     @param La ubicación del archivo a leer. (String)
     @return Los datos del archivo leído. (ArrayList<String[]>)
      */
